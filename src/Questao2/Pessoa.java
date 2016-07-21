@@ -10,14 +10,36 @@ package Questao2;
  * @author usuario
  */
 public class Pessoa {
-    public String nome;
-    public int idade;
-    private String pessoa;
+
     
-    public String getPessoa() {
-        return pessoa;
+    private String nome;
+    private int idade;
+   // private String pessoa;
+    
+
+    public String getNome() {
+        return nome;
     }
-    public void setPessoa(String pessoa) {
-        this.pessoa = pessoa;
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+    
+    
+     public  String Pessoa(){
+        return "\n"+getNome()+"\nIdade: "+getIdade();
+
+     }
+     public void adiciona(Pessoa p){
+		System.out.println(p.Pessoa());
+	
+	}
 }

@@ -9,6 +9,17 @@ package Questao2;
  *
  * @author usuario
  */
-public class Pobre {
+public class Pobre extends Pessoa{
+   
+    public String trabalha(){
+        return "Trabalho mais não saio do canto!";
+    }
     
+   
+   
+    @Override
+    public String Pessoa(){
+        return super.Pessoa()+"\nTrabalha:"+trabalha();
+    }
+
 }

@@ -11,4 +11,15 @@ package Questao3;
  */
 public class Vip extends Ingresso{
     //valor adcional em cima de ingresso
+    private double adicional= 10.0;
+
+   
+    public double getValor() {
+        return super.getValor()+adicional; //To change body of generated methods, choose Tools | Templates.
+    }
+   
+    public String imprimeValor(){
+        return "VIP ";
+    }
+    
 }

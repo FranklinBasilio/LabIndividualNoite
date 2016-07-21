@@ -10,5 +10,13 @@ package Questao2;
  * @author usuario
  */
 public class Cachorro extends Animal{
+    public String late(){
+       //return System.out.println("au au au");
+       return "au au" ;
+    }
     
+    public  String getInfo(){
+        return "\n"+getNome()+"\nRaça: "+getRaca()+"\nSom: "+late();
+
+     }
 }

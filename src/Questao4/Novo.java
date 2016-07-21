@@ -11,6 +11,12 @@ package Questao4;
  */
 public class Novo extends Imovel{
     //adcional de preco
-    
+    private double adicional;
+    public double setPreco(double preco) {
+       return this.adicional = preco*0.3;
+    }
     //acesso aos metodos e impressao deste valor adcional
+    public String getInfo(){
+		return super.getEndereco()+" Preço: "+super.getPreco()+adicional;
+	}
 }

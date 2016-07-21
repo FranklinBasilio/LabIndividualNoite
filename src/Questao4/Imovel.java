@@ -12,4 +12,29 @@ package Questao4;
 public class Imovel {
     //endereco
     //preco
+    private String endereco;
+    private Double preco;
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+    
+    public String getInfo(){
+		return this.getEndereco()+"\nPreço: "+this.getPreco();
+	}
+
+   
+    
 }

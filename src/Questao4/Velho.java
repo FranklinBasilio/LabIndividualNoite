@@ -12,4 +12,20 @@ package Questao4;
 public class Velho extends Imovel{
     //desconto de preço
     //criar metodos de acesso e impressao
+     private double desconto=0.25;
+   // public double getDesconto() {
+     //   return desconto;
+    //}
+
+    public double setPreco(double preco) {
+        return this.desconto = preco*desconto;
+    }
+    
+    
+
+    public String getInfo(){
+		return super.getEndereco()+"\nPreço: "+super.getPreco()-desconto;
+	}
+
+    
 }

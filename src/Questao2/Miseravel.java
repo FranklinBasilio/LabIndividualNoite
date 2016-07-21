@@ -9,6 +9,15 @@ package Questao2;
  *
  * @author usuario
  */
-public class Miseravel {
+public class Miseravel extends Pessoa{
     
+    
+    public String mendiga(){
+        return "Dê uma esmolinha!!";
+    }
+    
+     @Override
+    public String Pessoa(){
+        return super.Pessoa()+"\nMendiga:"+mendiga();
+    }
 }

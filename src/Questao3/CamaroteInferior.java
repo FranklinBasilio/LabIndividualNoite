@@ -10,5 +10,18 @@ package Questao3;
  * @author usuario
  */
 public class CamaroteInferior extends Vip{
+    private double ingressoCamaroteInferior;
+    private String direitaInferior, esquerdaInferior;
     
+     public double getIngressoCamaroteInferior() {
+        return ingressoCamaroteInferior;
+    }
+
+    public void setIngressoCamaroteInferior(double ingressoCamaroteInferior) {
+        this.ingressoCamaroteInferior = ingressoCamaroteInferior*0.30;
+    }
+     
+    public String imprimeValor(){
+        return "VIP "+"Camarote Inferior"+getIngressoCamaroteInferior();
+    }
 }

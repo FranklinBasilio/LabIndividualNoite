@@ -10,5 +10,12 @@ package Questao2;
  * @author usuario
  */
 public class Gato extends Animal{
-    
+    public String mia(){
+        //System.out.println("mi-a-a-a--u-u-u");
+        return "mi-a-a-a-u-u-u-uuu";
+    }
+    public  String getInfo(){
+        return "\n"+getNome()+"\nRaça: "+getRaca()+"\nSom: "+mia();
+
+     }
 }

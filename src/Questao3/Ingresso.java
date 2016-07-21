@@ -10,5 +10,22 @@ package Questao3;
  * @author usuario
  */
 public class Ingresso {
+    private double valor=0.0;
+
+    public double getValor() {
+        return valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+    
+   // public String imprimeValor(double ingresso){
+    //    return ""+ingresso;
+   // }
+
+    public String imprimeValor(){
+        return "";
+    }
+    
     
 }
