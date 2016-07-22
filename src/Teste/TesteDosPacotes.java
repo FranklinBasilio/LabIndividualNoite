@@ -79,6 +79,8 @@ public class TesteDosPacotes {
 	//*******************************************//
 	
         Imovel imovel = new Imovel();
+        Novo novo = new Novo();
+        Velho velho = new Velho();
         imovel.setEndereco("Rua do Nascimento, Bairro Olinda");
         imovel.setPreco(200.00);
         
@@ -92,9 +94,11 @@ public class TesteDosPacotes {
         
         
             if(escolha==1){
+               
                 System.out.println("\nNovo: "+imovel.getInfo());
             }else{
                 if(escolha==2){
+                  
                     System.out.println("\nVelho: "+imovel.getInfo());
                 }else{
                     System.out.println("Escolha errada");
@@ -104,7 +108,10 @@ public class TesteDosPacotes {
         //****************************************INGRESSOS
         System.out.println("\n*************** INGRESSOS **************************\n");
         Ingresso ingresso = new Ingresso();
-        ingresso.setValor(100.0);
+        Normal       normal = new Normal();
+        CamaroteInferior cI = new CamaroteInferior();
+        CamaroteSuperior cS = new CamaroteSuperior();
+      
         System.out.println("\nIngresso:\nNormal - tecle (1)\nVIP - tecle (2)\n");
         Scanner in = new Scanner(System.in);
         int opcaoIngresso;
@@ -114,7 +121,7 @@ public class TesteDosPacotes {
         }while(opcaoIngresso!=1 && opcaoIngresso !=2);
         
         if(opcaoIngresso==1){
-                System.out.println("\n>>> : "+ingresso.imprimeValor());
+                System.out.println("\n>>> : "+normal.imprimeValor());
             }else{
                 if(opcaoIngresso==2){
                    do{
@@ -123,9 +130,11 @@ public class TesteDosPacotes {
                          }while(opcaoIngresso!=1 && opcaoIngresso !=2);
                          if(opcaoIngresso==1){
                              //camaroteSuperior
+                             System.out.println("\n>>> : "+cS.imprimeValor());
                          }else{
                              if(opcaoIngresso==2){
                                  //camaroteInferior
+                                 System.out.println("\n>>> : "+cI.imprimeValor());
                              }else{
                                   System.out.println("Escolha errada");
                              }

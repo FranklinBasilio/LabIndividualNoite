@@ -16,7 +16,12 @@ public class Novo extends Imovel{
        return this.adicional = preco*0.3;
     }
     //acesso aos metodos e impressao deste valor adcional
+   // public String getInfo(){
+	//	return super.getEndereco()+" Preço: "+super.getPreco()+adicional;
+	//}
+    
     public String getInfo(){
-		return super.getEndereco()+" Preço: "+super.getPreco()+adicional;
+		return this.getEndereco()+"\nPreço: "+this.getPreco()+adicional;
 	}
+
 }

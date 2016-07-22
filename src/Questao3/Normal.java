@@ -12,7 +12,8 @@ package Questao3;
 public class Normal extends Ingresso{
     //imprime normal
    
-    public String imprimeValor(){
-        return ""+"NORMAL";
+   
+     public String imprimeValor(){
+        return ""+getValor()+"NORMAL";
     }
 }

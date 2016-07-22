@@ -18,13 +18,14 @@ public class CamaroteSuperior extends Vip{
         return ingressoCamarote;
     }
 
-    public void setIngressoCamarote(double ingressoCamarote) {
-        this.ingressoCamarote = ingressoCamarote*0.60;
+    public void setIngressoCamarote(double ingresso) {
+        this.ingressoCamarote = ingresso*0.60+ingresso;
     }
     
     
-    
-    public String imprimeValor(){
-        return "VIP "+"Camarote Superior"+getIngressoCamarote();
+     public String imprimeValor(){
+        return ""+getValor()+" VIP "+"Camarote Superior"+getIngressoCamarote();
     }
+     
+   
 }

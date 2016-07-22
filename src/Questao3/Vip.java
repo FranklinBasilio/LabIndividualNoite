@@ -18,8 +18,8 @@ public class Vip extends Ingresso{
         return super.getValor()+adicional; //To change body of generated methods, choose Tools | Templates.
     }
    
-    public String imprimeValor(){
-        return "VIP ";
+     public String imprimeValor(){
+        return ""+getValor()+"VIP ";
     }
     
 }

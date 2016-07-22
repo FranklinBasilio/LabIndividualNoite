@@ -18,14 +18,17 @@ public class Velho extends Imovel{
     //}
 
     public double setPreco(double preco) {
-        return this.desconto = preco*desconto;
+        return this.desconto = preco-(preco*desconto);
     }
     
     
 
+  //  public String getInfo(){
+	//	return super.getEndereco()+"\nPreço: "+super.getPreco()+desconto;
+//	}
+
     public String getInfo(){
-		return super.getEndereco()+"\nPreço: "+super.getPreco()-desconto;
+		return this.getEndereco()+"\nPreço: "+this.getPreco()+desconto;
 	}
 
-    
 }

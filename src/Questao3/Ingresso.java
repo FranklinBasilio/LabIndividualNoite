@@ -10,7 +10,7 @@ package Questao3;
  * @author usuario
  */
 public class Ingresso {
-    private double valor=0.0;
+    private double valor= 100.0;
 
     public double getValor() {
         return valor;
@@ -24,8 +24,10 @@ public class Ingresso {
    // }
 
     public String imprimeValor(){
-        return "";
+        return ""+getValor();
     }
+     
     
+
     
 }
