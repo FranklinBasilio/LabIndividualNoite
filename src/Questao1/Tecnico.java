@@ -10,5 +10,5 @@ package Questao1;
  * @author usuario
  */
 public class Tecnico extends Assistente{
-    
+    //faltou
 }
